@@ -210,7 +210,7 @@ public class UserController {
             return modelAndView;
         }
     }
-
+// thu git choi
     @PostMapping("/create")
     public ModelAndView createUser(User user)
 //            ,@RequestParam(name ="g-recaptcha-response") String captchaResponse)
