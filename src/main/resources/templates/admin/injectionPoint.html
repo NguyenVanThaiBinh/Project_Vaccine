@@ -9,7 +9,7 @@
     <nav class="navbar col-lg-12 col-12 p-0">
         <div>
             <a href="/">
-                <img style=" width: 100%;"
+                <img style="height: 113px; width: 100%"
                      alt="virus corona 2019"
                      class="img-responsive hidden-xs"
                      src="https://vnvc.vn/wp-content/uploads/2021/06/virus-corona-covid-19-pc.jpg"
@@ -585,7 +585,7 @@
                                             </thead>
                                             <tbody>
 
-                                            <th:block th:each="u : ${destinationList}">
+                                            <th:block th:each="u : ${destination}">
                                                 <tr th:id="${u.id+'-row'}">
                                                     <td th:text="${u.id}"></td>
                                                     <td th:text="${u.nameDestination}"></td>
@@ -708,17 +708,10 @@
 </div>
 
 
-<script src="/template/vendor/bootstrap/js/popper.min.js"></script>
-<script src="/template/js/sweetalert2.min.js"></script>
-<script src="/template/js/jquery-3.6.0.min.js"></script>
-<script src="/template/vendor/bootstrap/js/bootstrap.min.js"></script>
-<script src="/template/js/jquery.validate-1.19.3.min.js"></script>
 
-<script src="/template/js/destination_vaccine.js"></script>
-<script src="/template/js/destination_vaccine_validate.js"></script>
-
-
-
-
+<script src="/webjars/jquery/3.5.1/jquery.min.js"></script>
+<script src="/webjars/bootstrap/4.6.0/js/bootstrap.min.js"></script>
+<script th:src="@{/js/admin/destination_vaccine.js}"></script>
+<script th:src="@{/js/admin/sweetalert2.min.js}"></script>
 </body>
 </html>

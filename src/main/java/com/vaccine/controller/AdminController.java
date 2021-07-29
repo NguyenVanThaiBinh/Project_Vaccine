@@ -113,6 +113,7 @@ public class AdminController {
         for(int i=0;i<userList.getTotalPages();i++){
             list.add(i);
         }
+        System.out.println(list.size());
         modelAndView.addObject("user",userList);
         modelAndView.addObject("list",list);
         modelAndView.addObject("pageActive",currentPage);
